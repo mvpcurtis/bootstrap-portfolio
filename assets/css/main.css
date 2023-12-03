@@ -1,16 +1,17 @@
+/* CUSTOM CSS */
+/* IMPORTED FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@400;500;600;700&display=swap");
 
-* {
-	box-sizing: border-box;
-}
-
+/* VARIABLES */
 :root {
 	/* COLOURS */
 	--white-colour: #fbfbfb;
 	--black-colour: #151515;
 	--blue-colour: #0d6efd;
 }
+/* END VARIABLES */
 
+/* GLOBAL STYLES */
 body {
 	font-family: "Open Sans", sans-serif;
 	font-weight: normal;
@@ -30,11 +31,65 @@ header,
 	margin-bottom: 3em;
 }
 
+a:link,
+a:visited {
+	color: var(--white-colour);
+	text-decoration: none;
+	transition: all ease-in-out 0.1s;
+}
+
+a:hover,
+a:focus {
+	color: var(--blue-colour) !important;
+}
+
+.btn {
+	transition: all ease-in-out 0.1s;
+}
+
+.btn:hover,
+.btn:focus,
+.anchor-button:hover,
+.anchor-button:focus {
+	box-shadow: 0 0.5em 0.5em -0.4em rgb(143, 197, 255);
+	transform: translateY(-0.25em);
+}
+
+.anchor-button {
+	background-color: var(--blue-colour);
+}
+
+.anchor-button:hover,
+.anchor-button:focus {
+	color: white !important;
+}
+/* END SECTION */
+
+/* SECTION: NAVIGATION */
 .navbar-brand {
 	font-weight: bold;
 	text-transform: uppercase;
 }
+/* END SECTION */
 
+/* SECTION: MAIN PAGE HEADER */
+header .alert a:link,
+header .alert a:visited {
+	color: var(--blue-colour);
+}
+
+header .alert a:hover,
+header .alert a:focus {
+	color: #5597fa !important;
+	transition: all ease-in-out 0.1s;
+}
+
+.jumbotron-buttons a:first-of-type {
+	margin-right: 1rem;
+}
+/* END SECTION */
+
+/* SECTION: MY WORK */
 .card-image {
 	width: 231px;
 	height: 231px;
@@ -54,52 +109,81 @@ header,
 #project-3 {
 	background-image: url("https://images.pexels.com/photos/1089440/pexels-photo-1089440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
 }
+/* END SECTION */
 
+/* SECTION: ABOUT ME */
 #myskills {
 	font-size: 5rem;
 }
+/* END SECTION */
 
-a:link,
-a:visited {
-	color: var(--white-colour);
-	text-decoration: none;
-	transition: all ease-in-out 0.1s;
+/* SECTION: CONTACT ME */
+form {
+	border-left: 1px solid white;
+	padding-left: 1.5rem;
+}
+/* END SECTION */
+
+/* SECTION: FOOTER */
+.social-icons {
+	list-style-type: none;
+	padding-left: 0;
 }
 
-a:hover,
-a:focus {
-	color: var(--blue-colour) !important;
+.social-icons li {
+	float: left;
+	margin-left: 1em;
 }
 
-header .alert a:link,
-header .alert a:visited {
-	color: var(--blue-colour);
+.social-icons li:first-of-type {
+	margin-left: 0;
+}
+/* END SECTION */
+
+/* RESPONSIVE CHANGES FOR BREAKPOINT 992PX OR LESS*/
+@media screen and (max-width: 992px) {
+	#contactme h3 {
+		text-align: center !important;
+		padding: 1em;
+	}
+
+	form {
+		border-left: 0;
+		border-top: 1px solid white;
+		padding-left: 0;
+		padding-top: 1.5em;
+	}
 }
 
-header .alert a:hover,
-header .alert a:focus {
-	color: #5597fa !important;
-	transition: all ease-in-out 0.1s;
-}
+/* RESPONSIVE CHANGES FOR BREAKPOINT 768PX OR LESS */
+@media screen and (max-width: 768px) {
+	.jumbotron-buttons {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
 
-.btn {
-	transition: all ease-in-out 0.1s;
-    
-}
+	.jumbotron-buttons .btn {
+		display: block;
+		width: 100%;
+		margin-bottom: 1em;
+	}
 
-.btn:hover,
-.btn:focus {
-	box-shadow: 0 0.5em 0.5em -0.4em rgb(143, 197, 255);
-	transform: translateY(-0.25em);
-}
+	.jumbotron-buttons a:link,
+	.jumbotron-buttons a:visited {
+		width: 100%;
+	}
 
-.anchor-button {
-	background-color: var(--blue-colour);
-}
+	.jumbotron-buttons a:first-of-type {
+		margin-right: 0;
+	}
 
-.anchor-button:hover,
-.anchor-button:focus {
-	color: white !important;
-	box-shadow: 0 0.5em 0.5em -0.4em rgb(143, 197, 255);
-	transform: translateY(-0.25em);
+	.footer-content {
+		flex-direction: column !important;
+	}
+
+	.social-icons li {
+		margin-top: 0.5em;
+	}
 }

@@ -34,28 +34,37 @@
 				</div>
 			</div>
 		</nav>
-		<!-- SECTION: HEADER -->
+		<!-- SECTION: MAIN PAGE HEADER -->
 		<header>
 			<div class="container">
 				<!-- ALERT MESSAGE -->
 				<div class="alert alert-warning" role="alert"><b>Please note</b> - this is NOT my personal portfolio and that this is just Bootstrap project. My personal portfolio can be found <a href="https://mvpcurtis.github.io/portfolio/" target="_blank">here</a>.</div>
+				<!-- JUMBOTRON -->
 				<div class="p-5 bg-dark rounded-3">
 					<h1 class="display-5 fw-bold">Hey There Friend!</h1>
 					<p class="col-md-8 fs-4 my-4">And welcome to my bootstrap portfolio project! This project has been created for the EdX frontend web developer course. This is to demonstrate my Bootstrap capabilities!</p>
-					<a href="#my-work"><button class="btn btn-primary btn-lg px-5 rounded-0 fw-bold" type="button">My Work</button></a>
-					<a href="https://mvpcurtis.github.io/portfolio/" target="_blank"><button class="btn btn-light btn-lg ms-3 px-5 rounded-0" type="button">My Portfolio</button></a>
+					<!-- JUMBOTRON BUTTONS -->
+					<div class="jumbotron-buttons">
+						<a class="anchor-button btn btn-primary text-light btn-lg rounded-0 px-5 fw-bold" href="#mywork" type="button" target="_blank">My Work</a>
+						<a class="btn btn-light text-dark btn-lg rounded-0 px-5" href="https://mvpcurtis.github.io/portfolio" type="button" target="_blank">My Portfolio</a>
+					</div>
 				</div>
 			</div>
 		</header>
+		<!-- SECTION: MAIN -->
 		<main>
 			<div class="container">
+				<!-- SECTION: MY WORK -->
 				<section id="mywork" class="bg-dark rounded p-5">
+					<!-- SECTION HEADER -->
 					<h2>My Work</h2>
 					<p class="pb-3 border-bottom">Here's just a few of my projects.</p>
+					<!-- BOOTSTRAP GRID SYSTEM -->
 					<div class="row">
 						<div class="col-md mb-5">
+							<!-- BOOTSTRAP CARD -->
 							<div class="card bg-transparent text-light text-center h-100 border">
-								<img class="card-img-top" src="https://mvpcurtis.github.io/portfolio/assets/images/portfolio.png" alt="Code picture" />
+								<img class="card-img-top" src="assets/images/portfolio.png" alt="Code picture" />
 								<div class="card-body d-flex flex-column justify-content-between">
 									<h3 class="card-title mb-3 px-3">My Personal Portfolio</h3>
 									<p class="card-text px-3 pb-3">My personal portfolio was built using nothing but the latest versions of HTML, CSS and JavaScript. This is my own personal portfolio project created to server you my work.</p>
@@ -64,8 +73,9 @@
 							</div>
 						</div>
 						<div class="col-md mb-5">
+							<!-- BOOTSTRAP CARD -->
 							<div class="card bg-transparent text-light text-center h-100 border">
-								<img class="card-img-top" src="https://images.pexels.com/photos/330771/pexels-photo-330771.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Code picture" />
+								<img class="card-img-top" src="assets/images/pexels-code-photo-1.jpeg" alt="Code picture" />
 								<div class="card-body d-flex flex-column justify-content-between">
 									<h3 class="card-title mb-3 px-3">Bootstrap Project</h3>
 									<p class="card-text px-3 pb-3">This project was to show me using Bootstrap 5. Again, we were challenged to create another portfolio but this time using Bootstrap.</p>
@@ -74,8 +84,9 @@
 							</div>
 						</div>
 						<div class="col-md mb-5">
+							<!-- BOOTSTRAP CARD -->
 							<div class="card bg-transparent text-light text-center h-100 border">
-								<img class="card-img-top" src="https://images.pexels.com/photos/2061168/pexels-photo-2061168.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Code picture" />
+								<img class="card-img-top" src="assets/images/pexels-code-photo-2.webp" alt="Code picture" />
 								<div class="card-body d-flex flex-column justify-content-between">
 									<h3 class="card-title mb-3 px-3">Project Title 1</h3>
 									<p class="card-text px-3 pb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui dolorem placeat sunt omnis velit facere sed, sint fugit accusamus doloribus!</p>
@@ -85,15 +96,20 @@
 						</div>
 					</div>
 				</section>
+				<!-- SECTION: ABOUT ME -->
 				<section id="aboutme" class="bg-dark rounded p-5">
+					<!-- SECTION HEADER -->
 					<h2>About Me</h2>
 					<p class="pb-3 border-bottom">Take a moment to get to know me.</p>
 					<div class="d-flex flex-column align-items-center">
-						<img class="w-25 rounded-circle border my-3" src="https://mvpcurtis.github.io/portfolio/assets/images/myself.JPG" alt="Selfie" />
-						<p class="mb-3 w-75 h4 lh-md border-bottom py-5 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio aperiam iste rem incidunt accusantium sunt neque? Libero, repellendus atque! At aliquam obcaecati officia vel odio ut quo ea perspiciatis assumenda quisquam tempora consequatur similique, ratione fugit, incidunt culpa natus esse non nam repudiandae omnis voluptate dolores. Atque eum laboriosam incidunt.</p>
+						<!-- IMAGE OF MYSELF -->
+						<img class="w-25 rounded-circle border mb-3 mt-5" src="assets/images/selfie.jpg" alt="Selfie" />
+						<p class="mb-3 w-75 h4 lh-md border-bottom py-5 text-center">Where to start really... I'm a 27 year old male from the UK. I developed a deep passion for coding along time ago which then branched off into web development. Creating a beautiful frontend experience for the end-user genuinly really excites me! I still have a lot to learn which drives this desire to learn within me.</p>
+						<!-- SECTION: MY SKILLS -->
 						<div id="myskills" class="d-flex flex-column align-items-center w-100">
 							<h3 class="my-5 h1 text-primary">My Skills</h3>
 							<div class="row d-flex justify-content-between text-center w-75">
+								<!-- FONT AWESOME ICONS / BOOTSTRAP GRID SYSTEM-->
 								<div class="col-lg-2 col-md-4 col-sm-6"><i class="fa-brands fa-html5"></i></div>
 								<div class="col-lg-2 col-md-4 col-sm-6"><i class="fa-brands fa-css3-alt"></i></div>
 								<div class="col-lg-2 col-md-4 col-sm-6"><i class="fa-brands fa-js"></i></div>
@@ -101,22 +117,28 @@
 								<div class="col-lg-2 col-md-4 col-sm-6"><i class="fa-brands fa-bootstrap"></i></div>
 								<div class="col-lg-2 col-md-4 col-sm-6"><i class="fa-brands fa-git"></i></div>
 							</div>
+							<!-- FONT AWESOME ICONS / BOOTSTRAP GRID SYSTEM-->
 							<div class="row d-flex justify-content-between text-center w-75">
 								<div class="col-lg-2 col-md-4 col-sm-6"><i class="fa-brands fa-github"></i></div>
 							</div>
+							<!-- RESUME BUTTON -->
 							<button class="btn btn-light bg-transparent text-light border mt-5 py-3 px-5">Download Resume</button>
 						</div>
 					</div>
 				</section>
+				<!-- SECTION: CONTACT ME -->
 				<section id="contactme" class="bg-dark text-light rounded p-5">
+					<!-- SECTION HEADER -->
 					<h2 class="text-primary">Contact Me</h2>
 					<p class="pb-3 border-bottom">Have a question for me? Get in touch.</p>
+					<!-- BOOTSTRAP GRID SYSTEM -->
 					<div class="row">
 						<div class="col-lg-6 d-flex align-items-center mb-2 text-center">
 							<h3 class="lh-md text-end">If you'd like to contact me, please use the following form and I'll be happy to get back to you as soon as possible.</h3>
 						</div>
 						<div class="col-lg-6">
-							<form action="" class="border-start ps-4">
+							<!-- CONTACT FORM -->
+							<form action="">
 								<ul class="d-flex flex-column ps-0">
 									<li class="d-flex flex-column mb-3">
 										<label for="full-name">Enter your full name:</label>
@@ -138,25 +160,18 @@
 				</section>
 			</div>
 		</main>
+		<!-- SECTION: FOOTER -->
 		<footer class="bg-dark text-light py-3 px-5">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-6">
-						<span>&copy; Copyright 2023</span>
-					</div>
-					<div class="col-lg-6 d-flex justify-content-end">
-						<ul class="list-unstyled list-group list-group-horizontal-md">
-							<li class="me-3">
-								<a href="#"><i class="fa-brands fa-github"></i></a>
-							</li>
-							<li class="me-3">
-								<a href="#"><i class="fa-brands fa-linkedin"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-							</li>
-						</ul>
-					</div>
+				<div class="footer-content d-flex justify-content-between align-items-center">
+					<span id="copyright">&copy; Copyright 2023</span>
+					<ul class="social-icons text-center">
+						<li><a href="https://github.com/mvpcurtis">GitHub</a></li>
+						<li><a href="https://dev.to/mvpcurtis">DEV</a></li>
+						<li><a href="https://www.linkedin.com/in/curtisbowen/">LinkedIn</a></li>
+						<li><a href="https://www.youtube.com/autumnmade">YouTube</a></li>
+						<li><a href="mailto:curtis.bowen@gmx.com">Email Me</a></li>
+					</ul>
 				</div>
 			</div>
 		</footer>
