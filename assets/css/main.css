@@ -8,6 +8,7 @@
 	--white-colour: #fbfbfb;
 	--black-colour: #151515;
 	--blue-colour: #0d6efd;
+	--red-colour: #ff3a3a;
 }
 /* END VARIABLES */
 
@@ -162,6 +163,16 @@ form {
 
 .social-icons li:first-of-type {
 	margin-left: 0;
+}
+
+.social-icons li:last-of-type a:link,
+.social-icons li:last-of-type a:visited {
+	color: var(--blue-colour);
+	text-decoration: underline;
+}
+
+#copyright i {
+	color: var(--red-colour);
 }
 /* END SECTION */
 
