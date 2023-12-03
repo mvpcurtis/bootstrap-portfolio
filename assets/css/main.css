@@ -79,11 +79,18 @@ header .alert a:visited {
 header .alert a:hover,
 header .alert a:focus {
 	color: #5597fa !important;
+	transition: all ease-in-out 0.1s;
+}
+
+.btn {
+	transition: all ease-in-out 0.1s;
+    
 }
 
 .btn:hover,
 .btn:focus {
 	box-shadow: 0 0.5em 0.5em -0.4em rgb(143, 197, 255);
+	transform: translateY(-0.25em);
 }
 
 .anchor-button {
