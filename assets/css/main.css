@@ -8,6 +8,7 @@
 	/* COLOURS */
 	--white-colour: #fbfbfb;
 	--black-colour: #151515;
+	--blue-colour: #0d6efd;
 }
 
 body {
@@ -56,4 +57,42 @@ header,
 
 #myskills {
 	font-size: 5rem;
+}
+
+a:link,
+a:visited {
+	color: var(--white-colour);
+	text-decoration: none;
+	transition: all ease-in-out 0.1s;
+}
+
+a:hover,
+a:focus {
+	color: var(--blue-colour) !important;
+}
+
+header .alert a:link,
+header .alert a:visited {
+	color: var(--blue-colour);
+}
+
+header .alert a:hover,
+header .alert a:focus {
+	color: #5597fa !important;
+}
+
+.btn:hover,
+.btn:focus {
+	box-shadow: 0 0.5em 0.5em -0.4em rgb(143, 197, 255);
+}
+
+.anchor-button {
+	background-color: var(--blue-colour);
+}
+
+.anchor-button:hover,
+.anchor-button:focus {
+	color: white !important;
+	box-shadow: 0 0.5em 0.5em -0.4em rgb(143, 197, 255);
+	transform: translateY(-0.25em);
 }
