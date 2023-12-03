@@ -84,6 +84,30 @@ header .alert a:focus {
 	transition: all ease-in-out 0.1s;
 }
 
+.jumbotron {
+	overflow: hidden;
+}
+
+.jumbotron-buttons {
+	z-index: 10;
+	position: relative;
+}
+
+.jumbotron::after {
+	content: "";
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	top: 0;
+	right: 0;
+	background-image: url("../images/selfie.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	transform: rotate(15deg);
+	z-index: 1;
+	opacity: 0.3;
+}
+
 .jumbotron-buttons a:first-of-type {
 	margin-right: 1rem;
 }
@@ -128,6 +152,7 @@ form {
 .social-icons {
 	list-style-type: none;
 	padding-left: 0;
+	margin-bottom: 0;
 }
 
 .social-icons li {
@@ -142,9 +167,17 @@ form {
 
 /* RESPONSIVE CHANGES FOR BREAKPOINT 992PX OR LESS*/
 @media screen and (max-width: 992px) {
+	.jumbotron::after {
+		z-index: 1;
+	}
+
 	#contactme h3 {
 		text-align: center !important;
 		padding: 1em;
+	}
+
+	.jumbotron-buttons {
+		z-index: 10;
 	}
 
 	form {
@@ -157,11 +190,16 @@ form {
 
 /* RESPONSIVE CHANGES FOR BREAKPOINT 768PX OR LESS */
 @media screen and (max-width: 768px) {
+	.jumbotron::after {
+		display: none;
+	}
+
 	.jumbotron-buttons {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		width: 100%;
+		z-index: 10;
 	}
 
 	.jumbotron-buttons .btn {
