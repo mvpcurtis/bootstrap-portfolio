@@ -1,56 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@400;500;600;700&display=swap");
 
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 :root {
-    /* COLOURS */
-    --white-colour: #fbfbfb;
-    --black-colour: #151515;
+	/* COLOURS */
+	--white-colour: #fbfbfb;
+	--black-colour: #151515;
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
-    font-weight: normal;
-    font-size: 1rem;
-    background-color: var(--black-colour);
-    color: var(--white-colour);
-    line-height: 1.6;
-    text-rendering: optimizeLegibility;
-    min-height: 100vh;
+	font-family: "Open Sans", sans-serif;
+	font-weight: normal;
+	font-size: 1rem;
+	background-color: var(--black-colour);
+	color: var(--white-colour);
+	line-height: 1.6;
+	text-rendering: optimizeLegibility;
+	min-height: 100vh;
 }
 
-nav, header, #mywork, #aboutme, #contactme {
-    margin-bottom: 3em;
+nav,
+header,
+#mywork,
+#aboutme,
+#contactme {
+	margin-bottom: 3em;
 }
 
 .navbar-brand {
-    font-weight: bold;
-    text-transform: uppercase;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .card-image {
-    width: 231px;
-    height: 231px;
-    border: 1px solid var(--white-colour);
-    padding: 0.5em;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+	width: 231px;
+	height: 231px;
+	border: 1px solid var(--white-colour);
+	padding: 0.5em;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-#project-1 { background-image: url("https://images.pexels.com/photos/965345/pexels-photo-965345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); }
-#project-2 { background-image: url("https://images.pexels.com/photos/330771/pexels-photo-330771.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); }
-#project-3 { background-image: url("https://images.pexels.com/photos/1089440/pexels-photo-1089440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); }
-
-.card-info {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
+#project-1 {
+	background-image: url("https://images.pexels.com/photos/965345/pexels-photo-965345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+#project-2 {
+	background-image: url("https://images.pexels.com/photos/330771/pexels-photo-330771.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+#project-3 {
+	background-image: url("https://images.pexels.com/photos/1089440/pexels-photo-1089440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
 }
 
-.card-img-top {
-    max-height: 250px;
-    background-size: cover;
+#myskills {
+	font-size: 5rem;
 }
